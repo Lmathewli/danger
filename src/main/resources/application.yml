@@ -2,7 +2,6 @@ server:
   port: 1212
   servlet:
     context-path: /sell
-
 spring:
   datasource:
     name: test
@@ -47,10 +46,10 @@ pagehelper:
   supportMethodsArguments: true
   params: count=countSql
 
-ip: http://fulllife.nat100.top
 weixin:
   mp:
-    appId: wxf423bd5db236e87a
-    appSecret: deb07251bf1eacee88ef012fcc8ce379
+  appId: wxf423bd5db236e87a
+  appSecret: deb07251bf1eacee88ef012fcc8ce379
 
+ip: http://fulllife.nat100.top
 

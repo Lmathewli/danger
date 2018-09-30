@@ -1,7 +1,7 @@
 package com.life.full.danger.sell.product.service.impl;
 
 import com.life.full.danger.sell.product.enums.ProductStatusEnum;
-import com.life.full.danger.sell.product.model.dbobject.ProductInfo;
+import com.life.full.danger.sell.product.model.ProductInfo;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -48,11 +48,11 @@ public class ProductServiceImplTest {
     @Test
     public void save() {
         ProductInfo productInfo = new ProductInfo();
-        productInfo.setProductId("123457");
-        productInfo.setProductName("皮皮吓");
+        productInfo.setProductId("123456");
+        productInfo.setProductName("test product name");
         productInfo.setProductPrice(new BigDecimal(3.2));
         productInfo.setProductStock(100);
-        productInfo.setProductDescription("很好吃的吓");
+        productInfo.setProductDescription("test");
         productInfo.setProductIcon("http://xxx.jpg");
         productInfo.setProductStatus(ProductStatusEnum.DOWN.getCode());
         productInfo.setCategoryType(3);

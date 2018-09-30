@@ -4,9 +4,9 @@ create table `product_info`(
   `product_name` varchar (64) not null comment '商品名称',
   `product_price` decimal (8, 2) not null comment '商品单价',
   `product_stock` int not null comment '库存',
-  `product_description` varchar (64) comment `描述`,
+  `product_description` varchar (64) comment '描述',
   `product_icon` varchar (512) comment '小图片地址',
-  `product_staus` int (2) default 0 comment '0:正常； 1：下架',
+  `product_status` int (2) default 0 comment '0:正常； 1：下架',
   `category_type` int not null comment '类目编号',
   `create_time` timestamp not null default current_timestamp comment '创建时间',
   -- mysql事件，当更新的时候，mysql自动更新
@@ -27,7 +27,7 @@ create table `product_category`(
 ) comment '类目表';
 
 -- 订单表
-create table `order_master`(
+create table `order`(
   `order_id` varchar(32) not null,
   `buyer_name` varchar (32) not null comment '买家名字',
   `buyer_phone` varchar (32) not null comment '买家电话',
@@ -57,7 +57,7 @@ create table `order_detail` (
   `update_time` timestamp not null default current_timestamp on update current_timestamp comment '更新时间',
   primary key(`detail_id`),
   key `idx_order_id` (`order_id`)
-) comment ('订单详情表');
+) comment '订单详情表';
 
 
 

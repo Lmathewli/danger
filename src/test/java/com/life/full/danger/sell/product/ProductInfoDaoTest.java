@@ -1,6 +1,6 @@
 package com.life.full.danger.sell.product;
 
-import com.life.full.danger.sell.product.model.dbobject.ProductInfo;
+import com.life.full.danger.sell.product.model.ProductInfo;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -6,9 +6,9 @@ server:
 spring:
   datasource:
     name: test
-    url: jdbc:mysql://192.168.221.128:3306/sell?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true
+    url: jdbc:mysql://localhost:3306/sell?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true
     username: root
-    password: xxx
+    password: abc123_
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
     filters: stat
@@ -29,9 +29,11 @@ spring:
   redis:
     host: 118.178.238.13
     port: 6379
-    password: xxxxxxxx
+    password: tuxiaoer
   main:
     allow-bean-definition-overriding: true
+  jackson:
+    default-property-inclusion: NON_NULL
 
 mybatis:
   mapper-locations: classpath:com/life/full/danger/*/mapper/*.xml
@@ -44,4 +46,11 @@ pagehelper:
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
+
+ip: http://fulllife.nat100.top
+weixin:
+  mp:
+    appId: wxf423bd5db236e87a
+    appSecret: deb07251bf1eacee88ef012fcc8ce379
+
 

@@ -1,6 +1,6 @@
 package com.life.full.danger.sell.product;
 
-import com.life.full.danger.sell.product.model.dbobject.ProductInfo;
+import com.life.full.danger.sell.product.model.ProductInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.life.full.danger.sell.product.model.dbobject;
+package com.life.full.danger.sell.product.model;
 
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;

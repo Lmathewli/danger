@@ -2,7 +2,7 @@ package com.life.full.danger.sell.controller;
 
 import com.life.full.danger.sell.category.model.ProductCategory;
 import com.life.full.danger.sell.category.service.CategoryService;
-import com.life.full.danger.sell.product.model.dbobject.ProductInfo;
+import com.life.full.danger.sell.product.model.ProductInfo;
 import com.life.full.danger.sell.product.service.ProductService;
 import com.life.full.danger.sell.utils.ResultViewUtil;
 import com.life.full.danger.sell.view.ProductInfoView;
